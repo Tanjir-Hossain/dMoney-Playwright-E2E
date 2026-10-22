@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit the Gmail API token
+.env
+
+# Playwright generated output
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Ad-hoc local screenshots (curated evidence lives in docs/evidence)
+/screenshots/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

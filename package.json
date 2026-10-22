@@ -1,0 +1,29 @@
+{
+  "name": "dmoney-portal-playwright",
+  "version": "1.0.0",
+  "description": "End-to-end Playwright automation for the DMoney practice portal (Agent lifecycle, transactions, password reset, statement export).",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test --headed --project=chromium",
+    "test:regression": "playwright test tests/regression --headed --project=chromium",
+    "test:smoke": "playwright test tests/smoke --headed --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "automation",
+    "dmoney"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "googleapis": "^183.0.0"
+  }
+}
