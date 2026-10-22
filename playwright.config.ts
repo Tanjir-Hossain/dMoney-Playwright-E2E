@@ -26,8 +26,8 @@ export default defineConfig({
   use: {
     baseURL: 'https://dmoneyportal.roadtocareer.net',
 
-    // Headed so the recorded video is a real browser walkthrough.
-    headless: false,
+  // Headed locally so you can watch it; headless on GitHub (no display there).
+    headless: !!process.env.CI,
 
     screenshot: 'on',
     video: 'on',
